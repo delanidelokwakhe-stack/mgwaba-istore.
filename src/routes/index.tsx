@@ -98,7 +98,7 @@ const offers = [
   {
     icon: CreditCard,
     title: "Buy Now, Pay Later",
-    text: "Split any iPhone into 3 to 24 monthly instalments.",
+    text: "Split any iPhone into 1 to 3 monthly instalments.",
     to: "/finance" as const,
     cta: "See plans",
   },

@@ -5,7 +5,7 @@ export const zar = (value: number) =>
     maximumFractionDigits: 0,
   }).format(value);
 
-export const monthly = (price: number, months = 24, rate = 0.12) => {
+export const monthly = (price: number, months = 3, rate = 0.12) => {
   const r = rate / 12;
   if (r === 0) return price / months;
   return (price * r) / (1 - Math.pow(1 + r, -months));

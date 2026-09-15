@@ -14,7 +14,7 @@ export const Route = createFileRoute("/finance")({
   head: () => ({
     meta: [
       { title: "Finance Options & Instalment Calculator — Mgwaba iStore" },
-      { name: "description", content: "Split your iPhone into 3 to 24 monthly instalments. Calculate deposit, monthly payment and total payable." },
+      { name: "description", content: "Split your iPhone into 1 to 3 monthly instalments. Calculate deposit, monthly payment and total payable." },
       { property: "og:title", content: "Finance Options — Mgwaba iStore" },
       { property: "og:description", content: "Buy Now Pay Later plans with an instant instalment calculator." },
     ],
@@ -22,12 +22,12 @@ export const Route = createFileRoute("/finance")({
   component: Finance,
 });
 
-const terms = [3, 6, 12, 18, 24];
+const terms = [1, 3];
 
 function Finance() {
   const [price, setPrice] = useState(19499);
   const [deposit, setDeposit] = useState(3000);
-  const [months, setMonths] = useState(12);
+  const [months, setMonths] = useState(3);
   const [rate, setRate] = useState(12);
 
   const calc = useMemo(() => {
@@ -181,7 +181,7 @@ function Finance() {
             {[
               { icon: CreditCard, title: "Visa & Mastercard", text: "Debit and credit cards, 3D Secure verified, instant approval." },
               { icon: ShieldCheck, title: "Bank Transfer (EFT)", text: "Pay manually and upload proof — we verify within business hours." },
-              { icon: BadgeCheck, title: "Instalments", text: "3 to 24 months with a deposit from 10% of the device price." },
+              { icon: BadgeCheck, title: "Instalments", text: "1 to 3 months with a deposit from 10% of the device price." },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 0.06}>
                 <div className="surface lift h-full p-7">

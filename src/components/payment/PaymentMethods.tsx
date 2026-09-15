@@ -19,7 +19,7 @@ const methods: { id: PaymentMethod; icon: typeof CreditCard; title: string; text
     id: "instalment",
     icon: Wallet,
     title: "📆 Instalment Plan",
-    text: "Split into 3–24 monthly payments",
+    text: "Split into 1–3 monthly payments",
   },
 ];
 

@@ -550,7 +550,7 @@ export const products: Product[] = raw.map(
 
 export const getProduct = (slug: string) => products.find((p) => p.slug === slug);
 
-export const monthlyFor = (price: number) => monthly(price, 24);
+export const monthlyFor = (price: number) => monthly(price, 3);
 
 export const newArrivals = products.filter((p) => p.year >= 2025);
 export const bestSellers = products.filter((p) =>

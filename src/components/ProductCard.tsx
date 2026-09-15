@@ -119,7 +119,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
             ) : null}
           </div>
           <p className="text-xs text-muted-foreground">
-            or {zar(monthly(product.price))} /month × 24
+            or {zar(monthly(product.price))} /month × 3
           </p>
 
           <div className="mt-4 grid grid-cols-2 gap-2">

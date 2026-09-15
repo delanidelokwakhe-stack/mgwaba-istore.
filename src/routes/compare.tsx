@@ -42,7 +42,7 @@ const rows: { label: string; get: (p: Product) => string }[] = [
   { label: "Weight", get: (p) => p.specs.weight },
   { label: "Available Colours", get: (p) => p.colours.join(", ") },
   { label: "Price", get: (p) => zar(p.price) },
-  { label: "Monthly Payment", get: (p) => `${zar(monthly(p.price))} × 24` },
+  { label: "Monthly Payment", get: (p) => `${zar(monthly(p.price))} × 3` },
   { label: "Availability", get: (p) => p.stock },
 ];
 

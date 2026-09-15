@@ -142,7 +142,7 @@ function ProductDetail() {
               ) : null}
             </div>
             <p className="text-sm text-muted-foreground">
-              or {zar(monthly(product.price))} /month × 24 · Trade-in value up to {zar(product.tradeInValue)}
+              or {zar(monthly(product.price))} /month × 3 · Trade-in value up to {zar(product.tradeInValue)}
             </p>
 
             <div className="mt-7">

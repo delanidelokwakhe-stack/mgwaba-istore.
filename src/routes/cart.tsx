@@ -173,7 +173,7 @@ function Cart() {
               <dd>{zar(total)}</dd>
             </div>
             <p className="text-xs text-muted-foreground">
-              Or {zar(monthly(total))} /month on a 24-month plan.
+              Or {zar(monthly(total))} /month on a 3-month plan.
             </p>
           </dl>
           <Button asChild size="lg" className="mt-6 w-full rounded-full" disabled={active.length === 0}>
